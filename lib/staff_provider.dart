@@ -28,6 +28,7 @@ class StaffListProvider extends StateNotifier<List<StaffModel>> {
 
   }
 
+  //add skill
   void addSkill(int userIndex, String skill) {
     List<String> skills = [...state[userIndex].skills, skill] ;
     state =
@@ -37,6 +38,7 @@ class StaffListProvider extends StateNotifier<List<StaffModel>> {
     ];
   }
 
+  //remove skill
   void removeSkill(int userIndex, int skillIndex) {
     state =
     [
